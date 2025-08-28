@@ -22,6 +22,7 @@ pipeline {
 
         stage('Goodbye') {
             steps {
+                sh 'ping -c 4 www.google.com'
                 echo 'Pipeline completed successfully!'
             }
         }
